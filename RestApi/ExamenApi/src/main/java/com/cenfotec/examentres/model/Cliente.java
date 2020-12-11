@@ -26,6 +26,7 @@ public class Cliente {
 	 private int mes;
 	 private int anno;
 	 
+	 // ----------------------------------------------------------------
 	 
 	public Long getId() {
 		return id;
