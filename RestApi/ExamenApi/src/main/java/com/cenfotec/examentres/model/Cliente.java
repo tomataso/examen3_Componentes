@@ -25,6 +25,8 @@ public class Cliente {
 	 private String tarjeta;
 	 private int mes;
 	 private int anno;
+	 
+	 
 	public Long getId() {
 		return id;
 	}
