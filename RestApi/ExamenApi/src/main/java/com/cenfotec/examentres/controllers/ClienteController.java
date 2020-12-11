@@ -57,6 +57,7 @@ public class ClienteController {
 			@RequestBody Cliente cliente){
 		return repository.findById(id)
 				.map(record -> {
+					
 					record.setNombre(cliente.getNombre());
 					record.setApellidos(cliente.getApellidos());
 					record.setDomicilio(cliente.getDomicilio());
@@ -64,6 +65,7 @@ public class ClienteController {
 					record.setTarjeta(cliente.getTarjeta());
 					record.setMes(cliente.getMes());
 					record.setAnno(cliente.getAnno());
+					
 					Cliente updated = repository.save(record);
 					return ResponseEntity.ok().body(updated);
 	 }).orElse(ResponseEntity.notFound().build());
