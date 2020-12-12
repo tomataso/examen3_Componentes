@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.cenfotec.exagraphq.entities.Cliente;
+import com.cenfotec.exagraphql.entities.Cliente;
 import com.cenfotec.exagraphql.repositories.ClienteRepository;
 
 

@@ -15,7 +15,7 @@ type Query {
 }
 
 type Mutation {
-	createVehicle(nombre: String!, apellidos: String!, domicilio: String, dirCobro: String, tarjeta: String, mes: String, anno: String ): Cliente
+	createVehicle(nombre: String!, apellidos: String!,domicilio: String, dirCobro: String, tarjeta: String, mes: String, anno: String ): Cliente
 	deleteCliente(id: ID!): Boolean
 }
 

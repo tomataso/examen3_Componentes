@@ -1,4 +1,5 @@
-package com.cenfotec.exagraphq.entities;
+package com.cenfotec.exagraphql.entities;
+
 
 import java.io.Serializable;
 
