@@ -20,7 +20,7 @@ public class ClienteMutation implements GraphQLMutationResolver {
 	}
 	
 	public boolean deleteVehicle(int id) {
-		return this.clienteService.deleteCliente(id));
+		return this.clienteService.deleteCliente(id);
 	}
 
 }
