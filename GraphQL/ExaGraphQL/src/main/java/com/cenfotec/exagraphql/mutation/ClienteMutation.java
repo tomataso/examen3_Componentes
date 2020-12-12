@@ -19,6 +19,11 @@ public class ClienteMutation implements GraphQLMutationResolver {
 		return this.clienteService.createCliente(nombre, apellidos, domicilio, dirCobro, tarjeta, mes, anno);
 	}
 	
+	public Cliente updateCliente(int id, String nombre, String apellidos, String domicilio, String dirCobro,
+			String tarjeta, String mes, String anno) {
+		return this.clienteService.createCliente(nombre, apellidos, domicilio, dirCobro, tarjeta, mes, anno);
+	}
+	
 	public boolean deleteCliente(int id) {
 		return this.clienteService.deleteCliente(id);
 	}
