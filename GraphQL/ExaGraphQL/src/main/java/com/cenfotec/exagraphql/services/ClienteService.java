@@ -51,7 +51,7 @@ public class ClienteService {
 		
 		clienteLista = clienteRepo.findById(id);
 		
-		
+		clienteLista.get().setId(id);
 		clienteLista.get().setNombre(nombre);
 		clienteLista.get().setApellidos(apellidos);
 		clienteLista.get().setDomicilio(domicilio);
