@@ -53,6 +53,9 @@ public class OrdenController {
 			 .map(record -> {
 				 record.setCantidad(orden.getCantidad());
 				 record.setImagen(orden.getImagen());
+				 
+				 // Revisar
+				 record.setProductos(orden.getProductos());
 
 				 Orden updated = repository.save(record);
 				 return ResponseEntity.ok().body(updated);
