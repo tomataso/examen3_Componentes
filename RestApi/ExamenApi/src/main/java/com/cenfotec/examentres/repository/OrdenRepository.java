@@ -9,4 +9,5 @@ import com.cenfotec.examentres.model.Orden;
 @Repository
 public interface OrdenRepository extends JpaRepository<Orden, Long> {
 
+
 }
