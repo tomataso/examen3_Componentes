@@ -45,6 +45,25 @@ public class ClienteService {
 		return this.clienteRepo.save(cliente);
 	}
 	
+	public Cliente updateCliente(int id, String nombre, String apellidos, String domicilio, String dirCobro, String tarjeta, String mes , String anno ) {
+		
+		Optional<Cliente> clienteLista;
+		
+		clienteLista = clienteRepo.findById(id);
+		
+		
+		clienteLista.get().setNombre(nombre);
+		clienteLista.get().setApellidos(apellidos);
+		clienteLista.get().setDomicilio(domicilio);
+		clienteLista.get().setDirCobro(dirCobro);
+		clienteLista.get().setTarjeta(tarjeta);
+		clienteLista.get().setMes(mes);
+		clienteLista.get().setAnno(anno);
+		
+
+		return this.clienteRepo.save(clienteLista.get());
+	}
+	
 	
 	public boolean deleteCliente(int id) {
 		this.clienteRepo.deleteById(id);

@@ -16,6 +16,7 @@ type Query {
 
 type Mutation {
 	createCliente(nombre: String!, apellidos: String!, domicilio: String, dirCobro: String, tarjeta: String, mes: String, anno: String ): Cliente
+	updateCliente(id: ID!, nombre: String!, apellidos: String!, domicilio: String, dirCobro: String, tarjeta: String, mes: String, anno: String ): Cliente
 	deleteCliente(id: ID!): Boolean
 }
 
