@@ -18,13 +18,13 @@ public class ClienteQuery implements GraphQLQueryResolver {
 	@Autowired
 	private ClienteService clienteService;
 
-	public List<Cliente> getVehicles(int count) {
+	public List<Cliente> getClientes(int count) {
 		return this.clienteService.getAllClientes(count);
 		
 	
 	}
 
-	public Optional<Cliente> getVehicle(int id) {
+	public Optional<Cliente> getCliente(int id) {
 		return this.clienteService.getCliente(id);
 		
 	}

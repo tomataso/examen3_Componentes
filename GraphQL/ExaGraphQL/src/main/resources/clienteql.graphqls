@@ -1,7 +1,7 @@
 type Cliente {
 	id: ID!,
-	nombre: String,
-	apellidos: String,
+	nombre: String!,
+	apellidos: String!,
 	domicilio: String,
 	dirCobro: String,
 	tarjeta: String,
@@ -11,11 +11,11 @@ type Cliente {
 
 type Query {
 	clientes(count: Int):[Cliente]
-	clientes(id: ID): Cliente
+	cliente(id: ID): Cliente
 }
 
 type Mutation {
-	createVehicle(nombre: String!, apellidos: String!,domicilio: String, dirCobro: String, tarjeta: String, mes: String, anno: String ): Cliente
+	createCliente(nombre: String!, apellidos: String!, domicilio: String, dirCobro: String, tarjeta: String, mes: String, anno: String ): Cliente
 	deleteCliente(id: ID!): Boolean
 }
 

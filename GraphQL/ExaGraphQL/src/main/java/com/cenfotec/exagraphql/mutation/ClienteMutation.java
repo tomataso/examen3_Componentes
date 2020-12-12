@@ -15,11 +15,11 @@ public class ClienteMutation implements GraphQLMutationResolver {
 	@Autowired
 	private ClienteService clienteService;
 
-	public Cliente createVehicle(String nombre, String apellidos, String domicilio, String dirCobro, String tarjeta, String mes, String anno) {
+	public Cliente createCliente(String nombre, String apellidos, String domicilio, String dirCobro, String tarjeta, String mes, String anno) {
 		return this.clienteService.createCliente(nombre, apellidos, domicilio, dirCobro, tarjeta, mes, anno);
 	}
 	
-	public boolean deleteVehicle(int id) {
+	public boolean deleteCliente(int id) {
 		return this.clienteService.deleteCliente(id);
 	}
 

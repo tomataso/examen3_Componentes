@@ -10,11 +10,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+//import lombok.Data;
+//import lombok.EqualsAndHashCode;
 
-@Data
-@EqualsAndHashCode
+//@Data
+//@EqualsAndHashCode
 @Entity
 public class Cliente implements Serializable {
 	private static final long serialVersionUID = 1L;
