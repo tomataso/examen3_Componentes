@@ -1,0 +1,22 @@
+type Cliente {
+	id: ID!,
+	nombre: String,
+	apellidos: String,
+	domicilio: String,
+	dirCobro: String,
+	tarjeta: String,
+	mes: String,
+	anno: String
+}
+
+type Query {
+	clientes(count: Int):[Cliente]
+	clientes(id: ID): Cliente
+}
+
+type Mutation {
+	createVehicle(nombre: String!, apellidos: String!, domicilio: String, dirCobro: String, tarjeta: String, mes: String, anno: String ): Cliente
+	deleteCliente(id: ID!): Boolean
+}
+
+
